@@ -1,7 +1,7 @@
 {
-  "name": "datetimejs",
+  "name": "python-datetime",
   "version": "1.0.0",
-  "description": "\u0016\u001b[3;3~\u001b[3~\u001b[2~\u001b[2~Python-like datetime class with formatter and parser",
+  "description": "Python-like datetime class with formatter and parser",
   "main": "index.js",
   "scripts": {
     "test": "node test.js",
@@ -19,7 +19,9 @@
     "formatter",
     "parser",
     "python-like",
-    "js"
+    "js",
+	"browser",
+	"nodejs"
   ],
   "author": "Irreg",
   "license": "MIT",

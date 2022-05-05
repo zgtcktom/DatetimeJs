@@ -1,4 +1,4 @@
-// import {Datetime, Timedelta} from './src/index.js';
+// import {Datetime, Timedelta} from './index.js';
 const {Datetime, Timedelta} = require('./index.js');
 console.log(Datetime, Timedelta);
 
