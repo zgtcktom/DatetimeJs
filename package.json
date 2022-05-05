@@ -1,9 +1,8 @@
 {
   "name": "python-datetime",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Python-like datetime class with formatter and parser",
-  "module": "src/index.js",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "node test.js",
     "build": "npx webpack"
@@ -32,5 +31,10 @@
   "homepage": "https://github.com/zgtcktom/DatetimeJs#readme",
   "devDependencies": {
     "webpack": "^5.72.0"
+  },
+  "type": "module",
+  "exports": {
+    "import": "./src/index.js",
+    "require": "./index.cjs"
   }
 }
