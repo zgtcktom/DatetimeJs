@@ -1,0 +1,33 @@
+{
+  "name": "datetimejs",
+  "version": "1.0.0",
+  "description": "\u0016\u001b[3;3~\u001b[3~\u001b[2~\u001b[2~Python-like datetime class with formatter and parser",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js",
+    "build": "npx webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zgtcktom/DatetimeJs.git"
+  },
+  "keywords": [
+    "datetime",
+    "date",
+    "time",
+    "javascript",
+    "formatter",
+    "parser",
+    "python-like",
+    "js"
+  ],
+  "author": "Irreg",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zgtcktom/DatetimeJs/issues"
+  },
+  "homepage": "https://github.com/zgtcktom/DatetimeJs#readme",
+  "devDependencies": {
+    "webpack": "^5.72.0"
+  }
+}
