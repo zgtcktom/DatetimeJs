@@ -2,6 +2,7 @@
   "name": "python-datetime",
   "version": "1.0.1",
   "description": "Python-like datetime class with formatter and parser",
+  "module": "src/index.js",
   "main": "index.js",
   "scripts": {
     "test": "node test.js",
