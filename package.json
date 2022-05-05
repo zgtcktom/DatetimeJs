@@ -1,6 +1,6 @@
 {
   "name": "python-datetime",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Python-like datetime class with formatter and parser",
   "main": "index.js",
   "scripts": {

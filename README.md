@@ -22,6 +22,7 @@ import {Datetime, Timedelta} from 'python-datetime';
 ```
 <script src="./index.js"></script>
 ```
+
 or check test.html for simple usage
 
 ## Syntax
@@ -55,6 +56,7 @@ console.log(+Datetime.now());
 +Datetime.now() == Date.now()
 ```
 > 1651724057047
+
 > true
 
 ### fromTimestamp(ts)
