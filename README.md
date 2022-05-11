@@ -7,6 +7,8 @@ npm i python-datetime
 ```
 For browser, download index.js and rename it to e.g.: datetime.js.
 
+https://www.npmjs.com/package/python-datetime
+
 ## Usage
 ### CommonJS
 ```
