@@ -355,73 +355,65 @@ export class Datetime {
         return parse(string, pattern);
     }
 
-    #year;
-    #month;
-    #day;
-    #hour;
-    #minute;
-    #second;
-    #millisecond;
-
     constructor(year = 1, month = 1, day = 1, hour = 0, minute = 0, second = 0, millisecond = 0) {
-        this.year = year;
-        this.month = month;
-        this.day = day;
-        this.hour = hour;
-        this.minute = minute;
-        this.second = second;
-        this.millisecond = millisecond;
+        this._year = year;
+        this._month = month;
+        this._day = day;
+        this._hour = hour;
+        this._minute = minute;
+        this._second = second;
+        this._millisecond = millisecond;
     }
 
     get year() {
-        return this.#year;
+        return this._year;
     }
     get month() {
-        return this.#month;
+        return this._month;
     }
     get day() {
-        return this.#day;
+        return this._day;
     }
     get hour() {
-        return this.#hour;
+        return this._hour;
     }
     get minute() {
-        return this.#minute;
+        return this._minute;
     }
     get second() {
-        return this.#second;
+        return this._second;
     }
     get millisecond() {
-        return this.#millisecond;
+        return this._millisecond;
     }
 
     set year(n) {
         if (n < 1 || n > 9999) throw new Error('value out of range');
-        this.#year = +n;
+        this._year = +n;
     }
     set month(n) {
         if (n < 1 || n > 12) throw new Error('value out of range');
-        this.#month = +n;
+        this._month = +n;
     }
     set day(n) {
         if (n < 1 || n > daysOfMonth(this.year, this.month)) throw new Error('value out of range');
-        this.#day = +n;
+        this._day = +n;
     }
     set hour(n) {
         if (n < 0 || n > 23) throw new Error('value out of range');
-        this.#hour = +n;
+        this._hour = +n;
     }
     set minute(n) {
         if (n < 0 || n > 59) throw new Error('value out of range');
-        this.#minute = +n;
+        this._minute = +n;
     }
     set second(n) {
         if (n < 0 || n > 59) throw new Error('value out of range');
-        this.#second = +n;
+        this._second = +n;
     }
     set millisecond(n) {
         if (n < 0 || n > 999) throw new Error('value out of range');
-        this.#millisecond = +n;
+        this._millisecond = +n;
     }
 
     replace({
@@ -453,7 +445,7 @@ export class Datetime {
     }
 
     format(pattern) {
-        // return pattern.replace(/%(.)/g, (str, type) => this.#directive(type));
+        // return pattern.replace(/%(.)/g, (str, type) => this._directive(type));
         let string = [];
         for (let [type, value] of patternParser(pattern)) {
             if (type == true) {
